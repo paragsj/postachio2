@@ -126,13 +126,13 @@
               <div class="post-content" data-type-cleanup="true">
                 {{ post.content }}
               </div>
-              <a class="post-author" href="{{ site.base_url }}">
+              <a class="post-author">
                 {% if post.author %}
-                <img src="{{ post.author.avatar }}" />
+                
                 {% endif %}
                 <p>
                   {% if post.author %}
-                  <span class="post-author-name">{{ post.author.name }}</span>
+                  <span class="post-author-name"></span>
                   {% endif %}
                   <span class="post-date">Posted on {{ post.created_at|format_date }}</span>
                 </p>
