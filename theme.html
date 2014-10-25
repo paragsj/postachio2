@@ -122,17 +122,18 @@
         <div class="posts">
           {% for post in posts %}
           <div class="item">
-              <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-              <div class="post-content" data-type-cleanup="true">
-                {{ post.content }}
-              </div>
-              
-                <p>
+          <p>
                   {% if post.author %}
               
                   {% endif %}
                   <span class="post-date">{{ post.created_at|format_date }}</span>
                 </p>
+              <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+              <div class="post-content" data-type-cleanup="true">
+                {{ post.content }}
+              </div>
+              
+                
               
               <div class="dots"><span></span><span></span><span></span></div>
           </div>
